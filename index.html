@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | thesis test</title>
+    <title>Unity WebGL Player | thesis_test</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
@@ -16,8 +16,6 @@
           <div id="unity-progress-bar-full"></div>
         </div>
       </div>
-      <div id="unity-warning"> </div>
-    </div>
     <script>
 
       var container = document.querySelector("#unity-container");
@@ -52,14 +50,14 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/thesis-test.loader.js";
+      var loaderUrl = buildUrl + "/WebGL Builds.loader.js";
       var config = {
-        dataUrl: buildUrl + "/thesis-test.data",
-        frameworkUrl: buildUrl + "/thesis-test.framework.js",
-        codeUrl: buildUrl + "/thesis-test.wasm",
+        dataUrl: buildUrl + "/WebGL Builds.data",
+        frameworkUrl: buildUrl + "/WebGL Builds.framework.js",
+        codeUrl: buildUrl + "/WebGL Builds.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "smitee oberoi",
-        productName: "thesis test",
+        productName: "thesis_test",
         productVersion: "0.1",
         showBanner: unityShowBanner,
       };
@@ -90,7 +88,7 @@
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
         canvas.style.width = "100vw";
-        canvas.style.height = "100vh";
+        canvas.style.height = "101vh";
       }
 
       loadingBar.style.display = "block";
