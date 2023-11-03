@@ -1,0 +1,114 @@
+@font-face {
+  font-family: "EditorialNew";
+  src: url("EditorialNew-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  background-color: black; /* Correct the background color value */
+  background-size: cover;
+  overflow: hidden;
+}
+
+.nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  mix-blend-mode: color-dodge;
+  position: absolute;
+  bottom: 5%;
+  filter: brightness(1.1);
+}
+
+.nav a {
+  position: relative;
+  transition: 0.5s;
+}
+
+.prev,
+.next {
+  position: fixed;
+  z-index: 1;
+  text-align: center;
+}
+
+.slideshow-container {
+  position: relative;
+  z-index: 0;
+}
+
+.mySlides {
+  display: none;
+  position: absolute;
+}
+
+.slide {
+  width: 100%;
+  min-width: 1265px;
+  display: block;
+}
+
+.sides {
+  width: 60%;
+  position: relative;
+  z-index: 1;
+}
+
+.middle {
+  position: relative;
+  z-index: 1;
+}
+
+.nav img:hover {
+  -webkit-filter: drop-shadow(12px 12px 7px rgb(0, 255, 0));
+  filter: drop-shadow(1px 1px 20px rgb(0, 255, 0));
+  transition: 0.5s;
+  mix-blend-mode: add;
+}
+
+/* Add a container div for centering */
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.poem {
+  background-color: white;
+  font-family: EditorialNew;
+  color: black;
+  width: 4in;
+  height: 5.5in;
+  position: relative;
+  z-index: 2;
+  padding: 2%;
+  overflow: scroll;
+  display: none;
+}
+
+.key {
+  position: absolute;
+  top: 50%; /* Adjust the top position as needed */
+  left: 50%; /* Adjust the left position as needed */
+  transform: translate(12vw, -150%); /* Center the key div */
+  width: 4vh;
+  z-index: 3; /* Place the key above the image and arrows */
+  mix-blend-mode: color-dodge;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Adjust the alpha value to control darkness */
+    display: none;
+    z-index: 1;
+}
