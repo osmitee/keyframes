@@ -37,6 +37,18 @@ body {
   text-align: center;
 }
 
+.prevA,
+.nextA {
+  position: fixed;
+  z-index: 1;
+  text-align: center;
+  transform: rotate(180deg);
+}
+
+.centerArrow {
+  width: 60%;
+}
+
 .slideshow-container {
   position: relative;
   z-index: 0;
@@ -103,12 +115,17 @@ body {
 }
 
 .overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7); /* Adjust the alpha value to control darkness */
-    display: none;
-    z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(
+    0,
+    0,
+    0,
+    0.7
+  ); /* Adjust the alpha value to control darkness */
+  display: none;
+  z-index: 1;
 }
